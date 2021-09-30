@@ -1,0 +1,71 @@
+/* stijlblad (stylesheet) voor contact.html*/
+
+.form {
+  width: 820px;
+  display:fixed;
+  margin: 5% auto 0px;
+}
+
+.titel { 
+  font-size: 36px; 
+}
+
+.ondertitel {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.input-kader1 { margin-top: 30px; height: 50px; position: relative; }
+.input-kader2 { margin-top: 30px; height: 50px; position: relative; }
+.input-kader3 { margin-top: 30px; height:200px; position: relative; }
+
+
+.input {
+  background-color: #34374b;
+  border-radius: 10px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+  overflow:hidden;
+  resize: none;
+} .input2 { padding-top: 15px; } 
+ 
+
+.lange-dash {
+  opacity: 0;
+  transition: opacity 200ms;
+  position: relative;
+  bottom: 77px;
+} .lange-dash-bericht { bottom: 227px; }
+
+
+.placeholder {
+  color: #65657b;
+  left: 20px;
+  line-height: 10px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+#sumbit_knop {
+  position:relative;
+  width: 100%;
+  margin-top: 30px;
+} #sumbit_knop:hover .circle { width: 100%; }
+
+
+.input:focus ~ .lange-dash,
+.input:not(:placeholder-shown) ~ .lange-dash { opacity: 1; }
+.input:focus ~ .placeholder, .input:not(:placeholder-shown) ~ .placeholder { transform: translateY(-40px) translateX(0px) scale(1); }
+.input:not(:placeholder-shown) ~ .placeholder { color: #808097; }
+.input:not(:lange-dash-shown) ~ .lange-dash { color: #808097; }
+.input:focus ~ .placeholder { color: white; }

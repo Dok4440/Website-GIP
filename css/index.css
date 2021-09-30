@@ -1,0 +1,19 @@
+/* stylesheet voor alle html bestanden. */
+
+html {
+    background-color: #272727;
+	color: white;
+    font-family: system-ui, Helvetica, Arial, sans-serif, "Hiragino Kaku Gothic ProN";
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: #eee; 
+}
+
+.bg {
+    position:absolute;
+    inset: 0px;
+    margin: auto;
+}

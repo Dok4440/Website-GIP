@@ -1,0 +1,75 @@
+/* stijlblad (stylesheet) voor diensten.html*/
+
+
+.prijs-tabel {
+  margin: 7% auto 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  column-gap: 35px;
+  max-width: 90%;
+  display: absolute; 
+}
+
+.pakket {
+  border-radius: 4px;
+  background: white;
+  color: black;
+  font-weight: 500;
+  box-shadow: 0 5px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+h2 {
+    margin: 0;
+    padding: 1rem;
+    background: #296eb3;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    position: relative;
+}
+
+.prijs {
+    padding: 10px 1rem;
+    background: #003b81;
+    color: white;
+    text-shadow: 0 4px 0 #022f64;
+	font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+    box-shadow: inset 0 10px 4px -6px rgba(0, 0, 0, 0.1);
+} .prijs-groot { display: inline; font-size:350%; font-weight: 500; }
+
+ul {
+    padding: 0 0 5% 0;
+	padding-top: 30px;
+    margin: 0;
+}
+  
+
+li {
+    padding: 0.8em 1em;
+    font-size: 90%;
+} li:nth-child(odd) { background: #e8e8e8; }
+  
+  
+.populair-banner {
+    background: #4eee49;
+    transform: rotate(-45deg); /* 45 graden rotate */
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem 4rem;
+    top: 2rem;
+    left: -4rem;
+    border: 2px solid yellowgreen;
+}
+
+button {
+  position:relative;
+  margin: 2% auto;
+}
+
+button:hover .circle { width: 100%; }
+button:hover { color:black; }
