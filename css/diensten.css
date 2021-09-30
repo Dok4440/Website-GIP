@@ -7,7 +7,7 @@
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   column-gap: 35px;
   max-width: 90%;
-  display: absolute; 
+  display: absolute;  
 }
 
 .pakket {
@@ -43,6 +43,7 @@ h2 {
 } .prijs-groot { display: inline; font-size:350%; font-weight: 500; }
 
 ul {
+    list-style: none;
     padding: 0 0 5% 0;
 	padding-top: 30px;
     margin: 0;
@@ -71,5 +72,5 @@ button {
   margin: 2% auto;
 }
 
-button:hover .circle { width: 100%; }
-button:hover { color:black; }
+
+button:hover a { color:black; }
