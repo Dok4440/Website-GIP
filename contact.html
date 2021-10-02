@@ -2,24 +2,63 @@
 	<title> ws &#8212; Contact</title>
 	
 	<head>
+		<!-- icon in browser-->
 		<link rel="icon" href="img\WSlogo\logo_small_icon_only_inverted.png">
+
 		<link rel="stylesheet" href="css/contact.css"></link>
 		<link rel="stylesheet" href="css/button.css"></link>
 		<link rel="stylesheet" href="css/navigatie.css"></link>
 		<link rel="stylesheet" href="css/index.css"></link>
+
+		<link rel="stylesheet" media="screen and (max-width: 768px)"  href="css/klein_scherm.css"></link>
+
+		<!-- viewport voor smartphone/tablet @media-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	
 	<body>
 		<nav class="navigatie-menu">
 			<a href="index.html">Start</a>
 			<a href="diensten.html">Diensten</a>
-			<a href="index.html">Software</a>
-			<a href="contact.html">Contact</a>
+			<!-- <a href="index.html">Sofstware</a> -->
+			<a href="#formulier">Contact</a>
 			<div class="dot"></div>
 		</nav>
 
 	
+		<table id="gegevens-tabel">
+			<tr>
+				<td>Ondernemingsnaam</td>
+				<td>Will Support</td>
+			</tr>
+			<tr>
+				<td>Ondernemingsvorm</td>
+				<td>Eenmanszaak</td>
+			</tr>
+			<tr>
+				<td>Ondernemingsnummer</td>
+				<td>0113.341.113</td>
+			</tr>
+			<tr>
+				<td>Adres</td>
+				<td>Holven 17, 2490, Balen</td>
+			</tr>
+			<tr>
+				<td>Rekeningnummer</td>
+				<td>BE57 0345 1945 3326</td>
+			</tr>
+			<tr>
+				<td>BIC-code (of SWIFT-code)</td>
+				<td>GEBABEBB</td>
+			</tr>
+			<tr>
+				<td>btw-nummer</td>
+				<td>BE 0133.466.799</td>
+			</tr>
+		</table>
 	
+
+
 	
 		<div id="formulier">
 			<form class="form" method="POST" action="https://formspree.io/f/meqvdjno" onsubmit="this.submit(); this.reset(); return false;">
@@ -50,7 +89,6 @@
 				
 				
 				<button id="sumbit_knop" type="submit">Versturen<div class="circle"></div></button>
-				
 				
 			</form>
 		</div>

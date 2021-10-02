@@ -2,17 +2,17 @@
 
 
 .prijs-tabel {
-  margin: 7% auto 0px;
+  margin: 7% auto 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  column-gap: 35px;
+  column-gap: 20px;
   max-width: 90%;
   display: absolute;  
 }
 
 .pakket {
   border-radius: 4px;
-  background: white;
+  background: #979797;
   color: black;
   font-weight: 500;
   box-shadow: 0 5px 20px;
@@ -23,19 +23,20 @@
 h2 {
     margin: 0;
     padding: 1rem;
-    background: #296eb3;
     font-size: 1.2em;
     text-align: center;
-    font-weight: normal;
-    color: white;
+    font-weight: bold;
+    color: black;
     position: relative;
 }
+#brons  { background: #E4953C; }
+#zilver { background: #BBC2CC; }
+#goud   { background: #FAE481; }
 
 .prijs {
     padding: 10px 1rem;
-    background: #003b81;
+    background: #58595B;
     color: white;
-    text-shadow: 0 4px 0 #022f64;
 	font-size: 1.2em;
     font-weight: normal;
     text-align: center;
@@ -53,18 +54,18 @@ ul {
 li {
     padding: 0.8em 1em;
     font-size: 90%;
-} li:nth-child(odd) { background: #e8e8e8; }
+} li:nth-child(odd) { background: #808080; }
   
   
 .populair-banner {
-    background: #4eee49;
-    transform: rotate(-45deg); /* 45 graden rotate */
+    background: #666699;
+    transform: rotate(-45deg); /* 45 graden rotatie */
     position: absolute;
     z-index: 1;
     padding: 0.5rem 4rem;
     top: 2rem;
     left: -4rem;
-    border: 2px solid yellowgreen;
+    border: 2px solid #536878;
 }
 
 button {
@@ -74,3 +75,12 @@ button {
 
 
 button:hover a { color:black; }
+
+
+#voetnoot {
+	padding-top: 1%;
+	width: 95%;
+	padding-left: 5.5%;
+	font-style: italic;
+}
+

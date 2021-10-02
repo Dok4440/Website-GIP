@@ -1,0 +1,68 @@
+/* CONTACT.CSS AANPASSINGEN*/
+table {
+    width: 100%;
+    margin: 25% auto 0;
+    font-size: 85%
+}
+
+.form {
+    margin: 10% auto;
+    width: 95%;
+}
+
+
+
+/* NAVIGATIE.CSS AANPASSINGEN */
+.navigatie-menu {
+    position: absolute;
+    word-spacing: 10px;
+    width: 100%;
+    margin: 5% auto 10%; 
+    text-align: center;
+}   
+
+.navigatie-menu a {
+    font-size: 90%;
+}
+
+.navigatie-menu .dot { display: none; } /* geel bolletje altijd verbergen op smartphone/tablet. */ 
+
+
+
+/* INDEX.CSS AANPASSEN */
+.bg {
+    margin: 30% auto;
+    width: 50%;
+}
+
+blockquote { 
+    display: none; /* quotes enkel zichtbaar op grotere schermen. */
+}
+
+#over {
+    margin-top: 100%;
+    margin-bottom: 10%;
+}
+
+
+
+/* DIENSTEN.CSS AANPASSEN */
+.prijs-tabel {
+    width: 95%;
+    max-width: 100%;
+}
+
+.pakket {
+    margin-top: 25%;
+}
+
+.diensten-knop {
+    width: 80%;
+}
+
+#voetnoot {
+	padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+  

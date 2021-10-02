@@ -2,7 +2,7 @@
 /* om een button toe te voegen: <button><a href="LINK_VAN_KNOP">TEXT_OP_DE_KNOP<div class="circle"></div></a></button>*/
 
 button {
-    background: #08d;
+    background: #34374b;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
@@ -17,15 +17,14 @@ button {
     align-items: center;
     padding: 20px;
     justify-content: center;
-  
+
     transition: 1000ms;
     -webkit-tap-highlight-color: transparent;
-  }
+}
   
   button .circle {
     width: 5px;
     height: 5px;
-    background: transparent;
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -34,12 +33,12 @@ button {
     transition: 500ms;
   }
   
-  button:hover { background: transparent; }
+ button:hover { background: transparent; }
   
-  button:hover .circle {
+ button:hover .circle {
     height: 50px;
     width: 320px;
     left: 0;
     border-radius: 0;
-    border-bottom: 2px solid #eee;
+    border-bottom: 2px solid black;
   }

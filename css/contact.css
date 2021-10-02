@@ -1,9 +1,27 @@
 /* stijlblad (stylesheet) voor contact.html*/
 
-.form {
-  width: 820px;
+/*TABEL BOVENKANT PAGINA */
+table {
   display:fixed;
-  margin: 5% auto 0px;
+  border-collapse: collapse;
+  width: 65%;
+  margin: 10% auto 0;
+}
+
+td, th {
+  border: 0;
+  text-align: left;
+  padding: 1%;
+} tr:nth-child(even) { background: #808080; }
+
+
+
+
+/* FORMULIER ONDERKANT PAGINA */
+.form {
+  width: 65%;
+  display:fixed;
+  margin: 5% auto;
 }
 
 .titel { 
@@ -19,6 +37,8 @@
 .input-kader2 { margin-top: 30px; height: 50px; position: relative; }
 .input-kader3 { margin-top: 30px; height:200px; position: relative; }
 
+/* stijlblad (stylesheet) voor contact.html */
+
 
 .input {
   background-color: #34374b;
@@ -32,7 +52,6 @@
   padding-right: 20px;
   padding-left: 20px;
   width: 100%;
-  overflow:hidden;
   resize: none;
 } .input2 { padding-top: 15px; } 
  
@@ -60,12 +79,14 @@
   position:relative;
   width: 100%;
   margin-top: 30px;
+  background-color: coral;
 } #sumbit_knop:hover .circle { width: 100%; }
+  #sumbit_knop:hover { background: transparent; }
 
 
 .input:focus ~ .lange-dash,
 .input:not(:placeholder-shown) ~ .lange-dash { opacity: 1; }
 .input:focus ~ .placeholder, .input:not(:placeholder-shown) ~ .placeholder { transform: translateY(-40px) translateX(0px) scale(1); }
 .input:not(:placeholder-shown) ~ .placeholder { color: #808097; }
-.input:not(:lange-dash-shown) ~ .lange-dash { color: #808097; }
+.input:not(:placeholder-shown) ~ .lange-dash { color: #808097; } 
 .input:focus ~ .placeholder { color: white; }

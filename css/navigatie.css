@@ -29,7 +29,6 @@
   background: #fddb3a;
   border-radius: 50%;
   opacity: 0;
-  /* transform: translateX(30px); */
   transition: all 200ms;
 }
 
@@ -56,3 +55,4 @@
   transition: all 200ms;
   opacity: 1;
 }
+
