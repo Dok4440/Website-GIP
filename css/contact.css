@@ -15,6 +15,13 @@ td, th {
 } tr:nth-child(even) { background: #808080; }
 
 
+/*VOETNOOT ONDER TABEL*/
+#voetnoot-tabel {
+  padding-top: 10px;
+  width: 65%;
+  margin: auto;
+	font-style: italic;
+}
 
 
 /* FORMULIER ONDERKANT PAGINA */
