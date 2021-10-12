@@ -1,0 +1,418 @@
+/* CSS voor index.html, diensten.html, contact.html, de navigatiebalk en knoppen op alle pagina's. */
+
+
+
+/* ######################################################## */
+/* 						INDEX.HTML 							*/
+/* ######################################################## */
+
+html {
+    background-color: #272727;
+	color: white;
+    font-family: system-ui, Helvetica, Arial, sans-serif, "Hiragino Kaku Gothic ProN";
+    font-weight: 100;
+}
+a { text-decoration: none; color: #eee; }
+
+.logo-achtergrond {
+    position:absolute;
+    inset: 0px;
+    margin: 5% auto;
+	width: 300px;
+}
+
+html::-webkit-scrollbar{ 
+	display: none; 				/* scroll wiel verbergen in google chrome, safari en opera.*/
+}
+
+html { 
+	-ms-overflow-style: none;  	/* scroll wiel verbergen in internet explorer en microsoft edge. */
+	scrollbar-width: none; 		/* scroll wiel verbergen in firefox. */
+}
+
+/* qoutes op de hoofdpagina */
+blockquote {
+	display: flex;
+	font-family: 'EB Garamond', serif;
+    font-size: 200%;
+}
+
+#quote-een { padding-top: 10%; padding-left: 15% }
+#quote-twee { padding-top: 0%; padding-left: 60%; }
+
+/* "over" aan de onderkant van de hoofdpagina. */
+#index-over { background: #34374b; width: 90%; text-align: center; margin: 7% auto 0; padding: 10px; }
+#index-over h2 { text-transform: capitalize; }
+#index-over p  { padding: 0 15%; }
+
+
+@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
+	.logo-achtergrond {
+		margin: 30% auto;
+		width: 50%;
+	}
+	
+	blockquote { display: none; /* quotes zijn enkel zichtbaar op grotere schermen */ }
+	
+	#index-over { margin-top: 100%; margin-bottom: 10%; }
+}
+
+
+
+
+
+/* ######################################################## */
+/* 						DIENSTEN.HTML 						*/
+/* ######################################################## */
+
+.prijs-tabel {
+  margin: 7% auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  column-gap: 20px;
+  max-width: 90%;
+  display: absolute;  
+}
+
+.prijs-tabel-pakket {
+  border-radius: 4px;
+  background: #979797;
+  color: black;
+  font-weight: 500;
+  box-shadow: 0 5px 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.prijs-tabel-header {
+    margin: 0;
+    padding: 1rem;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+#pakket-brons  { background: #E4953C; }
+#pakket-zilver { background: #BBC2CC; }
+#pakket-goud   { background: #FAE481; }
+
+.pakket-prijs {
+    padding: 10px 1rem;
+    background: #58595B;
+    color: white;
+	font-size: 1.2em;
+    font-weight: normal;
+    text-align: center;
+    box-shadow: inset 0 10px 4px -6px rgba(0, 0, 0, 0.1);
+} 
+
+.pakket-prijs-groot { 
+	display: inline; 
+	font-size:350%; 
+	font-weight: 500; 
+}
+
+.pakket-list {
+    list-style: none;
+    padding: 0 0 5% 0;
+	padding-top: 30px;
+    margin: 0;
+}
+  
+.pakket-list-item {
+    padding: 0.8em 1em;
+    font-size: 90%;
+} li:nth-child(odd) { background: #808080; }
+  
+  
+.tabel-populair-banner {
+    background: #666699;
+    transform: rotate(-45deg); /* 45 graden rotatie */
+    position: absolute;
+    z-index: 1;
+    padding: 0.5rem 4rem;
+    top: 2rem;
+    left: -4rem;
+    border: 2px solid #536878;
+}
+
+.diensten-knop {
+  position:relative;
+  margin: 2% auto;
+}
+
+.diensten-knop:hover a { color:black; }
+
+
+#diensten-voetnoot {
+	padding-top: 1%;
+	width: 95%;
+	padding-left: 5.5%;
+	font-style: italic;
+}
+
+@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
+	.prijs-tabel {
+		width: 95%;
+		max-width: 100%;
+	}
+
+	.prijs-tabel-pakket {
+		margin-top: 25%;
+	}
+
+	.diensten-knop {
+		width: 80%;
+	}
+
+	#diensten-voetnoot {
+		padding-top: 5%;
+		padding-bottom: 10%;
+	}
+}
+
+
+
+
+
+/* ######################################################## */
+/* 						CONTACT.HTML 						*/
+/* ######################################################## */
+
+#gegevens-tabel {
+  display:fixed;
+  border-collapse: collapse;
+  width: 65%;
+  margin: 10% auto 0;
+}
+
+.gegevens-tabel-data {
+  border: 0;
+  text-align: left;
+  padding: 1%;
+} tr:nth-child(even) { background: #808080; }
+
+
+#voetnoot-tabel {
+  padding-top: 10px;
+  width: 65%;
+  margin: auto;
+	font-style: italic;
+}
+
+.contact-formulier {
+  width: 65%;
+  display:fixed;
+  margin: 5% auto;
+}
+
+.formulier-titel { 
+  font-size: 36px; 
+}
+
+.formulier-ondertitel {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.input-kader1 { margin-top: 30px; height: 50px; position: relative; }
+.input-kader2 { margin-top: 30px; height: 50px; position: relative; }
+.input-kader3 { margin-top: 30px; height:200px; position: relative; }
+
+.input {
+  background-color: #34374b;
+  border-radius: 10px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100%;
+  resize: none;
+} .input2 { padding-top: 15px; } 
+ 
+
+.lange-dash {
+  opacity: 0;
+  transition: opacity 200ms;
+  position: relative;
+  bottom: 77px;
+} .lange-dash-bericht { bottom: 227px; }
+
+
+.placeholder {
+  color: #65657b;
+  left: 20px;
+  line-height: 10px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+#sumbit_knop {
+  position:relative;
+  width: 100%;
+  margin-top: 30px;
+  background-color: coral;
+} #sumbit_knop:hover .circle { width: 100%; }
+  #sumbit_knop:hover { background: transparent; }
+
+
+.input:focus ~ .lange-dash,
+.input:not(:placeholder-shown) ~ .lange-dash { opacity: 1; }
+.input:focus ~ .placeholder, .input:not(:placeholder-shown) ~ .placeholder { transform: translateY(-40px) translateX(0px) scale(1); }
+.input:not(:placeholder-shown) ~ .placeholder { color: #808097; }
+.input:not(:placeholder-shown) ~ .lange-dash { color: #808097; } 
+.input:focus ~ .placeholder { color: white; }
+
+
+@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
+	#gegevens-tabel {
+		width: 100%;
+		margin: 25% auto 0;
+		font-size: 85%
+	}
+
+	.contact-formulier {
+		margin: 10% auto;
+		width: 95%;
+	}
+}
+
+
+
+
+
+/* ######################################################## */
+/* 						NAVIGATIEBALK 						*/
+/* ######################################################## */
+
+.navigatie-menu {
+  position:fixed;
+  top: 7%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  word-spacing: 50px;
+}
+
+.navigatie-menu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  display: inline;
+  font-weight: 500;
+  width: 80px;
+  transition: 200ms;
+}
+
+.navigatie-menu a:hover {
+  color: #fddb3a;
+}
+
+.navigatie-menu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.navigatie-menu a:nth-child(1):hover ~ .dot {
+  transform: translateX(25px);
+  transition: all 200ms;
+  opacity: 1;
+}
+
+.navigatie-menu a:nth-child(2):hover ~ .dot {
+  transform: translateX(150px);
+  transition: all 200ms;
+  opacity: 1;
+}
+
+.navigatie-menu a:nth-child(3):hover ~ .dot {
+  transform: translateX(300px);
+  transition: all 200ms;
+  opacity: 1;
+}
+
+.navigatie-menu a:nth-child(4):hover ~ .dot {
+  transform: translateX(450px);
+  transition: all 200ms;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
+	.navigatie-menu {
+		position: absolute;
+		word-spacing: 10px;
+		width: 100%;
+		margin: 5% auto 10%; 
+		text-align: center;
+	}   
+
+	.navigatie-menu a {
+		font-size: 90%;
+	}
+
+	.navigatie-menu .dot { display: none; } /* geel bolletje altijd verbergen op smartphone/tablet. */ 
+}
+
+
+
+
+
+
+/* ######################################################## */
+/* 							KNOPPEN 						*/
+/* ######################################################## */
+
+button {
+    background: #34374b;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    outline: 0;
+    text-align: center;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+
+    transition: 1000ms;
+    -webkit-tap-highlight-color: transparent;
+}
+  
+button .circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+}
+  
+button:hover { background: transparent; }
+  
+button:hover .circle {
+    height: 50px;
+    width: 320px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid black;
+}
