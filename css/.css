@@ -175,8 +175,8 @@ blockquote { display: none; }
 #voetnoot-tabel {
   padding-top: 10px;
   width: 65%;
-  margin: auto;
-	font-style: italic;
+  margin: auto 0;
+  font-style: italic;
 }
 
 .contact-formulier {
@@ -410,7 +410,12 @@ button:hover .circle {
 	.navigatie-menu a {
 		font-size: 140%;
 	}
+	
+	#voetnoot-tabel {
+		margin: auto;
+	}
 }
+
 
 
 /* scroll wiel verbergen in google chrome, safari, opera, internet explorer, microsoft edge en firefox.*/
