@@ -1,9 +1,6 @@
-/* CSS voor index.html, diensten.html, contact.html, de navigatiebalk en knoppen op alle pagina's. */
-
-
-
+/* CSS voor index.html, diensten.html, contact.html, de navigatiebalk, knoppen op alle pagina's en scherm veranderingen. */
 /* ######################################################## */
-/* 						INDEX.HTML 							*/
+/* 						INDEX.HTML 							
 /* ######################################################## */
 
 html {
@@ -17,52 +14,41 @@ a { text-decoration: none; color: #eee; }
 .logo-achtergrond {
     position:absolute;
     inset: 0px;
-    margin: 5% auto;
-	width: 300px;
-}
-
-html::-webkit-scrollbar{ 
-	display: none; 				/* scroll wiel verbergen in google chrome, safari en opera.*/
-}
-
-html { 
-	-ms-overflow-style: none;  	/* scroll wiel verbergen in internet explorer en microsoft edge. */
-	scrollbar-width: none; 		/* scroll wiel verbergen in firefox. */
+    margin: 30% auto;
+	  width: 50%;
 }
 
 /* qoutes op de hoofdpagina */
-blockquote {
-	display: flex;
-	font-family: 'EB Garamond', serif;
-    font-size: 200%;
-}
+blockquote { display: none; }
 
 #quote-een { padding-top: 10%; padding-left: 15% }
 #quote-twee { padding-top: 0%; padding-left: 60%; }
 
 /* "over" aan de onderkant van de hoofdpagina. */
-#index-over { background: #34374b; width: 90%; text-align: center; margin: 7% auto 0; padding: 10px; }
+#index-over { 
+  background: #34374b; 
+  width: 90%; 
+  text-align: center; 
+  margin-top: 100%; 
+  margin-bottom: 10%;
+  padding: 10px; 
+}
+
 #index-over h2 { text-transform: capitalize; }
 #index-over p  { padding: 0 15%; }
 
 
-@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
-	.logo-achtergrond {
-		margin: 30% auto;
-		width: 50%;
-	}
-	
-	blockquote { display: none; /* quotes zijn enkel zichtbaar op grotere schermen */ }
-	
-	#index-over { margin-top: 100%; margin-bottom: 10%; }
-}
+
+
+
+
 
 
 
 
 
 /* ######################################################## */
-/* 						DIENSTEN.HTML 						*/
+/* 						DIENSTEN.HTML 						
 /* ######################################################## */
 
 .prijs-tabel {
@@ -70,9 +56,11 @@ blockquote {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   column-gap: 20px;
-  max-width: 90%;
+  width: 95%;
+  max-width: 100%;
   display: absolute;  
 }
+
 
 .prijs-tabel-pakket {
   border-radius: 4px;
@@ -82,7 +70,9 @@ blockquote {
   box-shadow: 0 5px 20px;
   overflow: hidden;
   position: relative;
+  margin-top: 25%;
 }
+
 
 .prijs-tabel-header {
     margin: 0;
@@ -141,51 +131,39 @@ blockquote {
 .diensten-knop {
   position:relative;
   margin: 2% auto;
+  width: 80%;
 }
 
 .diensten-knop:hover a { color:black; }
 
-
 #diensten-voetnoot {
-	padding-top: 1%;
+	padding-top: 5%;
+  padding-bottom: 10%;
 	width: 95%;
 	padding-left: 5.5%;
 	font-style: italic;
 }
 
-@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
-	.prijs-tabel {
-		width: 95%;
-		max-width: 100%;
-	}
 
-	.prijs-tabel-pakket {
-		margin-top: 25%;
-	}
 
-	.diensten-knop {
-		width: 80%;
-	}
 
-	#diensten-voetnoot {
-		padding-top: 5%;
-		padding-bottom: 10%;
-	}
-}
+
+
 
 
 
 
 
 /* ######################################################## */
-/* 						CONTACT.HTML 						*/
+/* 						CONTACT.HTML 						
 /* ######################################################## */
 
 #gegevens-tabel {
   display:fixed;
   border-collapse: collapse;
-  width: 65%;
-  margin: 10% auto 0;
+  width: 100%;
+  margin: 25% auto 0;
+  font-size: 85%;
 }
 
 .gegevens-tabel-data {
@@ -195,7 +173,7 @@ blockquote {
 } tr:nth-child(even) { background: #808080; }
 
 
-#tabel-voetnoot {
+#voetnoot-tabel {
   padding-top: 10px;
   width: 65%;
   margin: auto;
@@ -203,9 +181,9 @@ blockquote {
 }
 
 .contact-formulier {
-  width: 65%;
+  width: 95%;
   display:fixed;
-  margin: 5% auto;
+  margin: 10% auto;
 }
 
 .formulier-titel { 
@@ -273,45 +251,34 @@ blockquote {
 .input:focus ~ .placeholder { color: white; }
 
 
-@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
-	#gegevens-tabel {
-		width: 100%;
-		margin: 25% auto 0;
-		font-size: 85%
-	}
 
-	.contact-formulier {
-		margin: 10% auto;
-		width: 95%;
-	}
-	
-	#tabel-voetnoot {
-		padding-top: 5%;
-		width: 100%;
-		margin: 0;
-	}
-}
+
+
+
 
 
 
 
 
 /* ######################################################## */
-/* 						NAVIGATIEBALK 						*/
+/* 						NAVIGATIEBALK 						
 /* ######################################################## */
 
 .navigatie-menu {
-  position:fixed;
+  position: absolute;
   top: 7%;
   left:50%;
+  width: 100%;
+  word-spacing: 10px;
+  margin: 5% auto 10%; 
   transform: translate(-50%, -50%);
-  word-spacing: 50px;
+  text-align: center;
 }
 
 .navigatie-menu a {
   color: #f6f4e6;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 90%;
   text-transform: uppercase;
   display: inline;
   font-weight: 500;
@@ -323,54 +290,9 @@ blockquote {
   color: #fddb3a;
 }
 
-.navigatie-menu .dot {
-  width: 6px;
-  height: 6px;
-  background: #fddb3a;
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 200ms;
-}
 
-.navigatie-menu a:nth-child(1):hover ~ .dot {
-  transform: translateX(25px);
-  transition: all 200ms;
-  opacity: 1;
-}
 
-.navigatie-menu a:nth-child(2):hover ~ .dot {
-  transform: translateX(150px);
-  transition: all 200ms;
-  opacity: 1;
-}
 
-.navigatie-menu a:nth-child(3):hover ~ .dot {
-  transform: translateX(300px);
-  transition: all 200ms;
-  opacity: 1;
-}
-
-.navigatie-menu a:nth-child(4):hover ~ .dot {
-  transform: translateX(450px);
-  transition: all 200ms;
-  opacity: 1;
-}
-
-@media only screen and (max-width: 768px) { /* voor kleinere schermen: tablet/smartphone*/
-	.navigatie-menu {
-		position: absolute;
-		word-spacing: 10px;
-		width: 100%;
-		margin: 5% auto 10%; 
-		text-align: center;
-	}   
-
-	.navigatie-menu a {
-		font-size: 90%;
-	}
-
-	.navigatie-menu .dot { display: none; } /* geel bolletje altijd verbergen op smartphone/tablet. */ 
-}
 
 
 
@@ -378,7 +300,7 @@ blockquote {
 
 
 /* ######################################################## */
-/* 							KNOPPEN 						*/
+/* 							KNOPPEN 						
 /* ######################################################## */
 
 button {
@@ -422,3 +344,77 @@ button:hover .circle {
     border-radius: 0;
     border-bottom: 2px solid black;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* ######################################################## */
+/*            SCHERM VERANDERINGEN
+/* ######################################################## */
+
+/*de css is geschreven in 'mobile-first', hier zijn kleine veranderingen voor grotere schermen. */
+
+@media only screen and (min-width: 768px) {
+	.logo-achtergrond {
+		margin: 5% auto;
+		width: 300px;
+	}
+	
+	blockquote {
+		display: flex;
+		font-family: 'EB Garamond', serif;
+		font-size: 200%;
+	}
+	
+	#index-over { 
+		margin: 7% auto 0;  
+	}
+
+	.prijs-tabel {
+		width: 100%;
+		max-width: 90%;
+	}
+
+	.prijs-tabel-pakket {
+		margin-top: 0;
+	}
+
+	#diensten-voetnoot {
+		padding-top: 1%;
+		padding-bottom: 0;
+	}
+
+	#gegevens-tabel {
+		width: 65%;
+		margin: 10% auto 0;
+		font-size: 100%;
+	}
+
+	.contact-formulier {
+		margin: 5% auto;
+		width: 65%;
+	}
+
+	.navigatie-menu {
+		position:fixed;
+		word-spacing: 50px;
+		margin: 0; 
+	}   
+
+	.navigatie-menu a {
+		font-size: 140%;
+	}
+}
+
+
+/* scroll wiel verbergen in google chrome, safari, opera, internet explorer, microsoft edge en firefox.*/
+
+html::-webkit-scrollbar{ display: none; }
+html { -ms-overflow-style: none; scrollbar-width: none; }
