@@ -29,8 +29,7 @@ blockquote { display: none; }
   background: #34374b; 
   width: 90%; 
   text-align: center; 
-  margin-top: 100%; 
-  margin-bottom: 10%;
+  margin: 100% auto 10%;
   padding: 10px; 
 }
 
