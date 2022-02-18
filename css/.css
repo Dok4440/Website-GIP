@@ -280,10 +280,9 @@ p {
 }
 
 .info-stuk-nummer {
-  visibility: hidden;
   font-size: 10vw;
   font-weight: 600;
-  padding: 10px 0;
+  padding: 0px 5px;
   position: sticky;
   top: 0;
   text-align: center;
@@ -294,13 +293,12 @@ p {
 .info-stuk-inhoud {
   border-top: 2px solid #fff;
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
   padding: 15px 0;
 }
 
 .info-stuk-inhoud .info-stuk-titel {
-  font-weight: 600
+  font-weight: 600;
 }
 
 .info-stuk-inhoud .info-stuk-tekst {
@@ -543,7 +541,27 @@ button:hover .circle {
 	}
 	
 	.info-stuk-nummer {
-		visibility: visible;
+		font-size: 10vw;
+		font-weight: 600;
+		padding: 10px 0;
+		position: sticky;
+		top: 0;
+		text-align: center;
+		height: calc(10vw + 20px);
+		transition: all 0.2s ease-in;
+	}
+	
+	.info-stuk-inhoud {
+		border-top: 2px solid #fff;
+		display: grid;
+		grid-template-columns: 1fr 4fr;
+		grid-gap: 10px;
+		padding: 15px 0;
+	}
+	
+	.info-stuk-inhoud .info-stuk-titel {
+		font-weight: 600;
+		max-width: 100%;
 	}
 	/* */
 	
