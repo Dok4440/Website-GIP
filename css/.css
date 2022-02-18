@@ -306,6 +306,12 @@ p {
   line-height: 26px;
 }
 
+.info-link{ color: lightblue; text-decoration: underline; }
+.info-link:hover{ color: #fddb3a; }
+
+.naast-elkaar{ float:left; }
+#naast-link { margin: -4px 5px 0px; }
+
 
 
 
@@ -517,7 +523,6 @@ button:hover .circle {
 	}
 
 	.navigatie-menu {
-		position:fixed;
 		word-spacing: 50px;
 		margin: 0; 
 	}   
