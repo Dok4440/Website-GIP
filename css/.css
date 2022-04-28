@@ -305,8 +305,9 @@ blockquote { display: none; }
 
 
 /* ######################################################## */
-/*            INFO.HTML
+/*            OPDRACHTEN.HTML
 /* ######################################################## */
+
 p {
   margin: 0 0 13px 0;
 }
@@ -353,7 +354,26 @@ p {
 
 .naast-elkaar{ float:left; }
 #naast-link { margin: -4px 5px 0px; }
+ 
 
+
+
+
+
+
+
+
+/* ######################################################## */
+/*            OPDRACHTEN.HTML
+/* ######################################################## */
+ 
+#privpol {
+  display:fixed;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 25% auto 0;
+  font-size: 100%;
+}	
 
 
 
@@ -560,6 +580,11 @@ button:hover .circle {
 		margin: 10% auto 0;
 		font-size: 100%;
 	}
+	
+	#privpol {
+		width: 60%;
+		margin: 10% auto 0;
+	}	
 
 	.contact-formulier {
 		margin: 5% auto;
