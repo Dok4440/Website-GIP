@@ -172,7 +172,7 @@ blockquote { display: none; }
   border: 0;
   text-align: left;
   padding: 1%;
-} tr:nth-child(even) { background: #808080; }
+} tr:nth-child(even) { background: #a0a0a0; color: black; }
 
 
 #voetnoot-tabel {
