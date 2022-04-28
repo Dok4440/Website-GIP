@@ -389,7 +389,9 @@ p {
 .navigatie-menu .huidige-pagina{
 	color: #b58b00;
 }
-
+.talen-menu .huidige-taal{
+	background-color: #b58b00;
+}
 
 
 
