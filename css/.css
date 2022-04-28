@@ -253,7 +253,7 @@ blockquote { display: none; }
 .input:focus ~ .placeholder { color: white; }
 
 #checklist a {
-	text-decoration: underline;
+	text-decoration: none;
 	color: coral;
 }
 
