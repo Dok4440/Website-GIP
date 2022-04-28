@@ -252,16 +252,22 @@ blockquote { display: none; }
 .input:not(:placeholder-shown) ~ .lange-dash { color: #808097; } 
 .input:focus ~ .placeholder { color: white; }
 
-#checklist a {
+
+/* SPECIALE a'S */
+#checklist a, .over-a {
 	text-decoration: none;
 	color: coral;
 }
 
-#checklist a:hover {
+#checklist a:hover, .over-a:hover, .gegevens-tabel-a:hover, .gegevens-tabel-a2:hover {
 	color: #fff;
 	background-color: coral;
 	text-decoration: none;
 }
+
+.gegevens-tabel-a { text-decoration: underline; }
+.gegevens-tabel-a2 { color: black; text-decoration: underline; }
+/**/
 
 
 /*CHECKBOX CODE GENOMEN VAN https://codepen.io/kathykato/pen/xxGObEp */
