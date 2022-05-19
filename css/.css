@@ -415,8 +415,21 @@ p {
 .navigatie-menu .huidige-pagina{
 	color: #b58b00;
 }
+
 .talen-menu .huidige-taal{
 	background-color: #b58b00;
+}
+
+.helpdesk{
+	margin-top: -20px;
+	float:right;
+}
+ 
+#hd-groter{
+	color: #9ae2d5;
+	font-size: 150%;
+	font-weight: 700;
+	text-decoration: underline;
 }
 
 
