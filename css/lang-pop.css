@@ -11,7 +11,7 @@ body {
 
 .modal {
   position: absolute;
-  left: 50%;
+  margin-left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: auto;
@@ -22,8 +22,9 @@ body {
   border: 3px solid black;
   border-radius: 5px;
   background: white;
-  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
+
 .message {
   font-size:1.1rem;
   margin-bottom: 1.6rem;
@@ -31,14 +32,18 @@ body {
 }
 .btn {
   color:inherit;
-    font-family:inherit;
+  font-family:inherit;
   font-size: inherit;
   background: white;
   padding: 0.3rem 3.4rem;
   border: 3px solid black;
-  margin-right: 2.6rem;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
+}
+
+#onderste{
+	margin-top: 1rem;
+	margin-left: 7%;
 }
 
 .btn:last-child {
@@ -55,17 +60,26 @@ body {
   transform: translate(0, 0);
 }
 
-.options {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
 	body{
 		background-image: url("../img/index-blur.jpg");
 		background-size:     cover;                  
 		background-repeat:   no-repeat;
 		background-position: center center;              
+	}
+	
+	.modal{
+		left: 50%;
+		box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+		margin-left: 0;
+	}
+	
+	.btn{
+		margin-right: 2.6rem;
+	}
+	
+	#onderste{
+		margin-top: 0;
+		margin-left: 0;		
 	}
 }
