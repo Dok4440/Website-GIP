@@ -40,6 +40,7 @@ body {
   font-size: inherit;
   background: white;
   padding: 0.3rem 3.4rem;
+  width: 100%;
   border: 3px solid black;
   box-shadow: 0 0 0 black;
   transition: all 0.2s;
@@ -47,7 +48,7 @@ body {
 
 #onderste{
 	margin-top: 1rem;
-	margin-left: 7%;
+	width: 100%;
 }
 
 .btn:last-child {
@@ -80,10 +81,12 @@ body {
 	
 	.btn{
 		margin-right: 2.6rem;
+		width: auto;
 	}
 	
 	#onderste{
 		margin-top: 0;
-		margin-left: 0;		
+		margin-left: 0;	
+		width: auto;
 	}
 }
