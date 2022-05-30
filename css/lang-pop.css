@@ -1,14 +1,16 @@
 html {
   font-size: 18px;
 }
+
 body {
-  color:black;
-  font-family: "Questrial", sans-serif;
-  background-image: url("../img/index-blur_MOBILE.jpg");
-  background-size:     cover;                  
-  background-repeat:   no-repeat;
-  background-position: center center; 
-  animation: slide 4s infinite linear;
+	margin: 0;
+	color:black;
+	font-family: "Questrial", sans-serif;
+	background-image: url("../img/index-blur_MOBILE.jpg");
+	background-size:     cover;                  
+	background-repeat:   no-repeat;
+	background-position: center center; 
+	animation: slide 4s infinite linear;
 }
 
 .modal {
