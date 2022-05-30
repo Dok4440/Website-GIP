@@ -4,8 +4,10 @@ html {
 body {
   color:black;
   font-family: "Questrial", sans-serif;
-  background-color: #ffec63;
-  background-position: 0 0;
+  background-image: url("../img/index-blur_MOBILE.jpg");
+  background-size:     cover;                  
+  background-repeat:   no-repeat;
+  background-position: center center; 
   animation: slide 4s infinite linear;
 }
 

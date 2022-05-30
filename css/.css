@@ -9,7 +9,7 @@ html {
     font-family: system-ui, Helvetica, Arial, sans-serif, "Hiragino Kaku Gothic ProN";
     font-weight: 100;
 }
-a { text-decoration: none; color: #eee; }
+a { text-decoration: none; color: white; }
 
 .logo-achtergrond {
     position:absolute;
