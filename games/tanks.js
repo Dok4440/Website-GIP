@@ -91,13 +91,13 @@ var costMap = {
     'Targeting': 200,
     'Medium Shell': 50,
     'Large Shell': 200,
-    'Cannon Ball': 300,
+    'Cannon Ball': 30,
     'EMP': 500,
     'Atomic Shell': 100,
-    'Air Strike': 1000,
-    'Napalm': 1000,
+    'Air Strike': 100,
+    'Napalm': 10,
     'Sniper Shell': 500,
-    'Flak Cannon': 500
+    'Flak Cannon': 5
 }
 var tanksTimesClicked = 0;
 var newRound = false;
@@ -2309,7 +2309,7 @@ var particleFactory = {
         var p = getNewParticle(owner);
         p.color = "rgba(0,0,0,0)";
         p.image = util.get('plane-img');
-        p.size = 40;
+        p.size = 80;
         p.position.x = 0;
         p.position.y = 10 + (Math.random() * 30);
         p.physical = false;
