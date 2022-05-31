@@ -558,6 +558,27 @@ button:hover .circle {
 
 
 
+/* ######################################################## */
+/* 							TANKS LMAO						
+/* ######################################################## */
+
+#TANKSdesktopClass{
+	visibility: hidden;
+}
+
+#TANKSmobileClass{
+	margin-top: 50%;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 /* ######################################################## */
@@ -665,6 +686,17 @@ button:hover .circle {
 	.helpdesk{
 		display:flex;
 	}
+	
+	#TANKSdesktopClass{
+		visibility: visible;
+	}
+
+	#TANKSmobileClass{
+		visibility: hidden;
+		margin-top: 0;
+		margin-left: 0;
+	}
+
 }
 
 /* kleine aanpassing voor tablets in landscape-mode (er waren complicaties met iPad mini/pro) */
@@ -698,6 +730,16 @@ button:hover .circle {
 	
 	.helpdesk{
 		display: none;
+	}
+	
+	#TANKSdesktopClass{
+		visibility: hidden;
+	}
+
+	#TANKSmobileClass{
+		visibility: visible;
+		margin-top: 50%;
+		text-align: center;
 	}
 }
 
