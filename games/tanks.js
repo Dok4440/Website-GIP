@@ -91,13 +91,13 @@ var costMap = {
     'Targeting': 200,
     'Medium Shell': 50,
     'Large Shell': 200,
-    'Cannon Ball': 30,
+    'Cannon Ball': 300,
     'EMP': 500,
-    'Atomic Shell': 100,
-    'Air Strike': 100,
-    'Napalm': 10,
+    'Atomic Shell': 750,
+    'Air Strike': 1000,
+    'Napalm': 750,
     'Sniper Shell': 500,
-    'Flak Cannon': 5
+    'Flak Cannon': 500
 }
 var tanksTimesClicked = 0;
 var newRound = false;
