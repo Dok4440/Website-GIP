@@ -742,10 +742,3 @@ button:hover .circle {
 		text-align: center;
 	}
 }
-
-
-
-/* scroll wiel verbergen in google chrome, safari, opera, internet explorer, microsoft edge en firefox.*/
-
-/*html::-webkit-scrollbar{ display: none; }
-html { -ms-overflow-style: none; scrollbar-width: none; }*/
